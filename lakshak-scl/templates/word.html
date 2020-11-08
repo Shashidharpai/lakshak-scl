@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="word.css">
+    <title>Word</title>
+</head>
+<style>
+    body{
+        background-color: #B8D7FF;
+        font-family:Arial, Helvetica, sans-serif
+    }
+    #topbar{
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    #defination{
+        border: 2px solid #0058CA;
+        margin-left:10vh;
+        margin-right:10vh;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding-left: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    #footer{
+        border-top: 2px solid #0058CA;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+        
+    }
+</style>
+<body>
+    <p id="topbar">The word you searched is {{word}}</p>
+    {% for i in data["list"] %}
+    <div id="defination">
+    <h2 style="text-align: center;">Defination</h2>
+    <p>{{i["definition"]}}</p>
+    <h2 style="text-align: center;">Example</h2>
+    <p>{{i["example"]}}</p>
+    </div>
+    
+    {%endfor%}
+    <div id="footer">
+        Thank You
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+a{
+	border: 50px;
+	padding-left: 150px;
+	 
+	
+}
+h1{
+	text-align: center;
+	font-size: 240%;
+	text-transform: uppercase;
+	padding-left: 0 auto;
+	border:150px;
+	
+
+
+}
+
+img.ex1 {
+	width:60px;
+    height: 20px;
+    display: inline-block;
+    max-width: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+div.xyz {
+	display: flex;
+    width: 18%;
+    height: 10px;
+    object-position: center;
+    justify-content: space-between;
+    align-items: center
+    text-decoration: none;
+}
+	
+img:hover{
+	background-color: pink;
+}
+
+body {
+	background-color: #000000;
+
+}
